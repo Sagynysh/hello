@@ -1,0 +1,9 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <div class="form-group">
+    <input class="form-control" type="text" ngModel #sendText name="text" placeholder="Ваше Имя" />
+    <button class="btn btn-primary btn-block" (click)="sayHelloWorld(sendText.value)">Отправить</button>
+    <p *ngIf="result">Результат : {{result}}</p>
+  </div>
+
+<router-outlet></router-outlet>
